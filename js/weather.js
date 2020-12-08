@@ -42,10 +42,10 @@ function gettingJSON(){
         //I would print the JSON to the console
         // Your code here.
         console.log(JSON.stringify(json));
-        loc.innerHTMl = (json['name']); 
+        loc.innerHTML = (json['name']); 
         temp.innerHTML = (json['main'].temp) + " with " + (json['weather'][0].description); 
         tempImg.src = 'http://openweathermap.org/img/wn/' + (json['weather'][0].icon + ".png");
-        tempImg.alt - (json['weather'][0].description)
+        tempImg.alt = (json['weather'][0].description)
         console.log('icon is' + json['weather'][0].icon)
     });
 }
